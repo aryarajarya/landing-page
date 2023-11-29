@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <style type="text/css">
+        
+        *{padding:0; margin:0; box-sizing: border-box;}
+        header{
+            width:100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), 
+              url(Tphoto.jpeg);
+            background-size: cover;
+            font-family: sans-serif;
+                }
+                 
+ #cursor{
+         height:150px;
+         width : 150px;
+         background-color:blanchedalmond;
+         border-radius:50%;
+         position:fixed;
+         transform:translate(-50%,-50%);
+}
+
+                
+                nav{
+                    height: 100px;
+                    width:  100% ;
+                    color: white;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+                .logo{
+                    font-size: 2em;
+                    letter-spacing: 2px;
+                }
+                .menu a{
+                       text-decoration: none;
+                       color: white;
+                       padding: 10px 20px;
+                       font-size: 20px;
+                     }
+                     
+                    .menu a:before{
+                        content: '';
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width: 0%;
+                        height: 100%;
+                        border-bottom: 2px solid indianred;
+                        transition: 0.4s linear;
+                    }
+                    .menu a:hover:before{
+                        width: 90%;
+                    }
+                    .register a{
+                         text-decoration: none;
+                       color: white;
+                       padding: 10px 20px;
+                       font-size: 20px;
+                       background:indianred;
+                       border-radius: 8px;
+                       transition: 0.4s;
+                       }
+
+                    .register a:hover{
+                        background: transparent;
+                        border:1px solid indianred;
+                    }
+                    .h-txt{
+                        max-width: 650px;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%,-50%);
+                        text-align: center;
+                        color: white;
+                    }
+                    .h-txt span{
+                        letter-spacing: 5px;
+                    }
+                    .h-txt h1{
+                        font-size: 3.5em;
+                    }
+                    .h-txt a{
+                        text-decoration: none;
+                        background: indianred;
+                        color: white;
+                        padding: 10px 20px;
+                        letter-spacing: 5px;
+                        transition: 0.4s;
+                    }
+                    .h-txt a:hover{
+                        background: transparent;
+                        border:1px solid indianred;}
+
+          #scroll-div::-webkit-scrollbar{display: none;}
+                  #scroll-div h1{
+     display: inline-block;
+    font-size: 150px;
+    font-family: monument;
+    text-transform: uppercase;  
+    margin-right: 30px;
+    letter-spacing: 2px;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;}
+      
+    @keyframes scroll{
+    0%{
+transform: translateX(0);
+    }
+    100%{
+transform: translateX(-100%);
+    }
+ }
+
+            
+    </style>
+</head>
+<body>
+    <div id=""cursor></div>
+    <header><nav>
+        
+     <div class ="logo">TRAVEL X</div>
+     <div class ="menu">
+            <a href="#">HOME</a>
+            <a href="#">HILL STATIONS</a>
+            <a href="#">BEST OFFER</a>
+            <a href="#">OUR SITES</a>
+            <a href="#">CONTACT</a>
+            </div>
+            <div class ="REGISTER"><a href="#">REGISTER</a></div>
+        </nav>
+        <section class="h-txt">
+            <div id="page1">
+            <span>ENJOY</span>
+            <h1>INTERNATIONAL TRAVEL AGENCY</h1>
+            <br>
+            <a href="#">BOOK YOUR TRIP</a>
+            <h4>-------------------------------------------</h4>
+            
+            <div id="scroll-div">
+                <h4>contact: aryaraj78399@gmail.com</h4>
+                
+            </div>
+        </section>
+</header>
+
+<div id="main">
+
+
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="landingpage.js"></script>
+</body>
+</html>
